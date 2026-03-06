@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operação Fechamento DP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-box">
+                <div class="brand-kicker">Dinâmica de Avaliação</div>
+                <h1>Operação Fechamento DP</h1>
+                <p>
+                    Simulação prática para avaliar priorização, Excel, folha e tomada de decisão
+                    em ambiente de alta demanda.
+                </p>
+            </div>
+
+            <div class="status-card">
+                <div class="status-label">Tempo restante</div>
+                <div id="timer" class="timer">45:00</div>
+            </div>
+
+            <div class="status-card">
+                <div class="status-label">Pontuação parcial</div>
+                <div id="scoreDisplay" class="score-display">0 / 55</div>
+            </div>
+
+            <div class="status-card">
+                <div class="status-label">Progresso</div>
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-fill"></div>
+                </div>
+                <div id="progressText" class="progress-text">Etapa 1 de 5</div>
+            </div>
+
+            <div class="steps-list">
+                <div class="step-item" data-step-indicator="0">
+                    <span class="step-number">1</span>
+                    <span class="step-name">Cenário</span>
+                </div>
+                <div class="step-item" data-step-indicator="1">
+                    <span class="step-number">2</span>
+                    <span class="step-name">Triagem</span>
+                </div>
+                <div class="step-item" data-step-indicator="2">
+                    <span class="step-number">3</span>
+                    <span class="step-name">Excel</span>
+                </div>
+                <div class="step-item" data-step-indicator="3">
+                    <span class="step-number">4</span>
+                    <span class="step-name">Folha</span>
+                </div>
+                <div class="step-item" data-step-indicator="4">
+                    <span class="step-number">5</span>
+                    <span class="step-name">Pressão</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <div class="topbar-kicker">Avaliação prática</div>
+                    <h2 id="pageTitle">Operação Fechamento DP</h2>
+                </div>
+                <div class="topbar-actions">
+                    <button id="btnReset" class="btn btn-secondary" type="button">Reiniciar</button>
+                </div>
+            </header>
+
+            <section id="content" class="content-panel"></section>
+
+            <footer class="footer-nav">
+                <button id="btnPrev" class="btn btn-secondary" type="button">Voltar</button>
+                <button id="btnNext" class="btn btn-primary" type="button">Avançar</button>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
